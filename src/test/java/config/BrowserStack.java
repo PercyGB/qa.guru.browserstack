@@ -7,7 +7,7 @@ import static org.aeonbits.owner.Config.LoadType.MERGE;
 @Config.LoadPolicy(MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:browserstack.properties"
+        "classpath:config/browserstack.properties"
 })
 
 public interface BrowserStack extends Config {
