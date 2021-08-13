@@ -9,7 +9,8 @@ repositories {
 
 def allureVersion = "2.13.8",
     selenideVersion = "5.20.1",
-    junitVersion = "5.7.1"
+    junitVersion = "5.7.1",
+    ownerVersion = "1.0.12"
 
 allure {
     version = allureVersion
@@ -28,6 +29,7 @@ dependencies {
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:7.3.0",
             "io.rest-assured:rest-assured:4.3.3",
+            "org.aeonbits.owner:owner:$ownerVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
